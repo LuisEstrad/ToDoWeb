@@ -1,0 +1,29 @@
+.loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Asegúrate de que coincida con la altura del contenedor de CompletionChart */
+    width: 200px;  /* Asegúrate de que coincida con la anchura del contenedor de CompletionChart */
+    position: relative;
+  }
+  
+  .loading-spinner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 8px solid rgba(255, 255, 255, 0.6);
+    border-top: 8px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

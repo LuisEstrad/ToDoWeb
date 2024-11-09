@@ -1,0 +1,21 @@
+h1 { position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #ffffff;  
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;  
+    text-align: center; 
+    padding: 1rem 0; 
+    z-index: 1000; 
+ }
+
+ .todo-counter {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem; 
+    text-align: center;
+    color: #ffffff; 
+  }
+  
+

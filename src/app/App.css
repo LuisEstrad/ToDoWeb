@@ -1,0 +1,48 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem; 
+  }
+  
+  .todo-list-container {
+    width: 60%; 
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+  }
+  
+  .chart-container {
+    width: 35%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+  }
+  
+  p {
+    color: white;
+  }
+
+  .no-tasks-message {
+    font-family: 'Lucida Handwriting', cursive; 
+    font-size: 1.5rem; 
+    text-align: center;
+    color: #ffffff; 
+    margin-top: 2rem;
+  }
+  
+  .empty-chart {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #757575; 
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1rem;
+  }
+  

@@ -1,0 +1,39 @@
+
+button.add {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 2.5rem; 
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+    margin: 0 auto; 
+}
+
+
+button.add::before {
+    content: '+';
+    transition: transform 0.3s ease; 
+}
+
+button.add:hover {
+    border-color: #ffffff; 
+    color: purple; 
+    transform: scale(1.1); 
+}
+
+button.add:hover::before {
+    transform: rotate(360deg); 
+}
+
+button.add:active {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+

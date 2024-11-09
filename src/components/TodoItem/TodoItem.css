@@ -1,0 +1,65 @@
+li {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    margin-bottom: 1rem; 
+}
+
+li p {
+    color: #ffffff; 
+    font-family: 'Lucida Handwriting', cursive; 
+    font-size: 1rem; 
+}
+
+button {
+    background-color: rgba(57, 51, 59, 0.71); 
+    border: 2px solid rgba(27, 6, 53, 0.6); 
+    border-radius: 50%; 
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff; 
+}
+
+button.complete::before {
+    content: '✓';
+    color: grey; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+button.complete.completed::before {
+    color: rgb(18, 255, 18); 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+button.delete::before {
+    content: '✗';
+    color: red; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+
+button:hover {
+    border-color: #ffffff; 
+}
+
+button:active {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+.completed-text {
+    text-decoration: line-through; 
+}
+
