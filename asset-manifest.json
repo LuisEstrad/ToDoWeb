@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ToDoWeb/static/css/main.4db80c55.css",
+    "main.js": "/ToDoWeb/static/js/main.807989a0.js",
+    "static/media/un degradado de colores oscuros abstracto inspirado en un atardecer y ocaso.png": "/ToDoWeb/static/media/un degradado de colores oscuros abstracto inspirado en un atardecer y ocaso.f5172248a03a33f2cb11.png",
+    "index.html": "/ToDoWeb/index.html",
+    "main.4db80c55.css.map": "/ToDoWeb/static/css/main.4db80c55.css.map",
+    "main.807989a0.js.map": "/ToDoWeb/static/js/main.807989a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4db80c55.css",
+    "static/js/main.807989a0.js"
+  ]
+}
