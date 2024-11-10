@@ -18,8 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Asegúrate de que coincida con la altura del contenedor de CompletionChart */
-  width: 200px;  /* Asegúrate de que coincida con la anchura del contenedor de CompletionChart */
+  height: 200px; 
+  width: 200px;  
   position: relative;
 }
 

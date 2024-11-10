@@ -8,6 +8,7 @@ import { TodoForm } from '../components/TodoForm';
 import { TodoItem } from '../components/TodoItem';
 import { TodoList } from '../components/TodoList';
 import { TodoSearch } from '../components/TodoSearch';
+import { Alert } from '../components/Alert'; 
 import React from 'react';
 import './App.css';
 
@@ -21,7 +22,9 @@ function AppUI() {
     completedTodos,  
     totalTodos,
     openModal,
-    setOpenModal,       
+    setOpenModal,
+    alertMessage,
+    closeAlert
   } = React.useContext(Context);
 
   return (
@@ -57,11 +60,13 @@ function AppUI() {
             <CompletionChart completed={completedTodos} total={totalTodos} loading={loading} />
         </div>
       </div>
+      {alertMessage && <Alert message={alertMessage} onClose={closeAlert} />} {}
     </React.Fragment>
   );
 }
 
 export { AppUI };
+
 
 
 

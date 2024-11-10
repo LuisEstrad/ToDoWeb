@@ -6,14 +6,14 @@
   width: 50%;
   max-width: 600px;
   height: auto;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)); /* Fondo con animación de gradiente */
-  border: 2px solid white; /* Borde blanco */
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8)); 
+  border: 2px solid white; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border-radius: 15px; /* Esquinas redondeadas */
+  border-radius: 15px; 
   z-index: 1001;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.204);
   animation: fadeIn 0.3s ease-out, scaleUp 0.3s ease-out;

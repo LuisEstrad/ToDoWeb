@@ -12,7 +12,7 @@ function useLocalStorage(itemName, initialValue) {
   // State of error in case something bad happens
   const [error, setError] = React.useState(false);
 
-  // Effect to see if there is anything on local storage
+  // Effect to use while waiting for local storage
   React.useEffect(() => {
     setTimeout(() => {
       try {

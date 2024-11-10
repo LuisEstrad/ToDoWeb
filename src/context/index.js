@@ -1,5 +1,5 @@
-import React from "react";
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import React, { useState } from 'react';
 
 const Context = React.createContext();
 
@@ -7,6 +7,7 @@ function Provider({ children }) {
     const { item: todos, saveItem: saveTodos, loading, error } = useLocalStorage('TODOS_V1', []);
     const [searchValue, setSearchValue] = React.useState('');
     const [openModal, setOpenModal] = React.useState(false); 
+    const [alertMessage, setAlertMessage] = useState(''); 
   
     const completedTodos = todos.filter(todo => todo.completed).length;
     const totalTodos = todos.length;
@@ -34,13 +35,30 @@ function Provider({ children }) {
     };
 
     const addTodo = (text) => {
+      if (text.trim() === '') {
+        setAlertMessage('Cannot add an empty task.');
+        return;
+      }
+
+      const lowerText = text.toLowerCase();
+      const isDuplicate = todos.some(todo => todo.text.toLowerCase() === lowerText);
+
+      if (isDuplicate) {
+        setAlertMessage('Task already exists.');
+        return;
+      }
+
       const newTodos = [...todos];
       newTodos.push({
         text,
         completed: false,
-      })
+      });
       saveTodos(newTodos);
-    }
+    };
+
+    const closeAlert = () => {
+      setAlertMessage('');
+    };
 
     return(
         <Context.Provider value={{
@@ -55,7 +73,9 @@ function Provider({ children }) {
             deleteTodo,
             openModal, 
             setOpenModal,
-            addTodo 
+            addTodo,
+            alertMessage,
+            closeAlert
         }}>
             {children}
         </Context.Provider>
@@ -63,3 +83,4 @@ function Provider({ children }) {
 }
 
 export { Context, Provider };
+

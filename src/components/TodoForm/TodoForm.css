@@ -2,15 +2,15 @@ form {
     font-family: 'Lucida Handwriting', cursive;
     font-size: 16px;
     color: rgb(255, 255, 255);
-    background-color: black; /* Fondo completamente negro */
-    border: 2px solid white; /* Borde blanco */
+    background-color: black; 
+    border: 2px solid white; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 90%; /* Ocupa el 90% del ancho del Modal */
+    width: 90%; 
     max-width: 500px;
-    text-align: center; /* Centrar los elementos */
-    margin: 5% auto; /* Márgenes entre el borde del Modal y su espacio propio */
+    text-align: center; 
+    margin: 5% auto; 
 }
 
 label {
@@ -22,7 +22,7 @@ label {
 }
 
 textarea {
-    width: 80%; /* Ocupa el 80% del área del TodoForm */
+    width: 80%; 
     height: 150px;
     padding: 10px;
     margin-bottom: 20px;
@@ -42,14 +42,14 @@ textarea:focus {
 
 .buttonContainer {
     display: flex;
-    flex-direction: column; /* Alineación vertical */
+    flex-direction: column; 
     align-items: center;
     width: 100%;
 }
 
 .addButton, .cancelButton {
     background-color: rgba(0, 0, 0, 0.6);
-    border: 2px solid white; /* Borde blanco por defecto */
+    border: 2px solid white; 
     border-radius: 5px;
     width: 80%;
     padding: 15px 0;
@@ -64,7 +64,7 @@ textarea:focus {
 .addButton:hover, .cancelButton:hover {
     background-color: white;
     color: black;
-    border-color: purple; /* Cambia el borde a morado al pasar el mouse */
+    border-color: purple; 
 }
 
 .addButton:active, .cancelButton:active {
